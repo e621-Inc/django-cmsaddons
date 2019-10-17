@@ -45,14 +45,6 @@ body.filebrowser,
             .cms-pagetree-header {
                 margin: 0;
             }
-
-            .navigator-top-nav {
-                box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
-            }
-
-            #content-main {
-                box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
-            }
         }
 
         .breadcrumbs + #content,
@@ -86,6 +78,32 @@ body.filebrowser,
         }
     }
 
+    &.filebrowser {
+
+        #content {
+
+            .navigator-top-nav {
+                box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
+            }
+
+            .navigator-table {
+
+                .column-action {
+
+                    .action-button {
+
+                        span {
+                            line-height: 1;
+                        }
+                    }
+                }
+            }
+        }
+
+        #content-main {
+            box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
+        }
+    }
 
     // Change List ------------------------------------------------------------
 
@@ -97,6 +115,7 @@ body.filebrowser,
 
                 th,
                 th a {
+                    font-size: 12px !important;
                     font-weight: bold;
                     text-transform: none;
                 }
@@ -111,9 +130,24 @@ body.filebrowser,
 
             td a {
                 display: inline-block;
+                vertical-align: middle;
                 max-width: 300px;
                 overflow: hidden;
             }
+        }
+
+        #container .breadcrumbs + .messagelist {
+            position: relative;
+            left: auto;
+            top: auto;
+            right: auto;
+            display: block;
+            width: auto;
+            margin: 87px 20px 40px !important;
+        }
+
+        #container .breadcrumbs + .messagelist + #content {
+            padding-top: 0 !important;
         }
 
         #changelist,
@@ -455,5 +489,27 @@ body.filebrowser,
             font-size: 12px;
             padding: 2px 12px !important;
         }
+    }
+
+    #change-history td a:not(.cke_button),
+    #change-history td p, #change-history th a:not(.cke_button),
+    #change-history th p,
+    &.change-list table td a:not(.cke_button),
+    &.change-list table td p,
+    &.change-list table th a:not(.cke_button),
+    &.change-list table th p,
+    &.dashboard table td a:not(.cke_button),
+    &.dashboard table td p,
+    &.dashboard table th a:not(.cke_button),
+    &.dashboard table th p,
+    .results table td a:not(.cke_button),
+    .results table td p,
+    .results table th a:not(.cke_button),
+    .results table th p,
+    .tabular table td a:not(.cke_button),
+    .tabular table td p,
+    .tabular table th a:not(.cke_button),
+    .tabular table th p {
+
     }
 }
