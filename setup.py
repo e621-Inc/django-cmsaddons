@@ -17,7 +17,7 @@ setup(
     url='http://github.com/rouxcode/django-cmsaddons',
     license='MIT',
     platforms=['OS Independent'],
-    description='Django CMS aaddons',
+    description='Django CMS addons',
     long_description=read('README.rst'),
     author=u'Alaric Maegerle',
     author_email='info@rouxcode.ch',
