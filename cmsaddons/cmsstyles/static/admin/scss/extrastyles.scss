@@ -55,6 +55,32 @@ body.filebrowser,
         .breadcrumbs + #content {
             padding-top: 120px !important;
         }
+
+        .breadcrumbs + .messagelist {
+            position: relative;
+            left: auto;
+            top: auto;
+            right: auto;
+            display: block;
+            width: auto;
+            margin: 87px 0 40px !important;
+            padding: 0;
+            list-style: none;
+
+            li {
+                margin: 0 0 1px 0;
+                padding: 10px 20px 10px 50px;
+
+                &:before {
+                    left: 20px;
+                }
+            }
+
+        }
+
+        .breadcrumbs + .messagelist + #content {
+            padding-top: 0 !important;
+        }
     }
 
     &.dashboard {
@@ -134,20 +160,6 @@ body.filebrowser,
                 max-width: 300px;
                 overflow: hidden;
             }
-        }
-
-        #container .breadcrumbs + .messagelist {
-            position: relative;
-            left: auto;
-            top: auto;
-            right: auto;
-            display: block;
-            width: auto;
-            margin: 87px 20px 40px !important;
-        }
-
-        #container .breadcrumbs + .messagelist + #content {
-            padding-top: 0 !important;
         }
 
         #changelist,
