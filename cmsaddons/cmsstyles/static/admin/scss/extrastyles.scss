@@ -502,26 +502,4 @@ body.filebrowser,
             padding: 2px 12px !important;
         }
     }
-
-    #change-history td a:not(.cke_button),
-    #change-history td p, #change-history th a:not(.cke_button),
-    #change-history th p,
-    &.change-list table td a:not(.cke_button),
-    &.change-list table td p,
-    &.change-list table th a:not(.cke_button),
-    &.change-list table th p,
-    &.dashboard table td a:not(.cke_button),
-    &.dashboard table td p,
-    &.dashboard table th a:not(.cke_button),
-    &.dashboard table th p,
-    .results table td a:not(.cke_button),
-    .results table td p,
-    .results table th a:not(.cke_button),
-    .results table th p,
-    .tabular table td a:not(.cke_button),
-    .tabular table td p,
-    .tabular table th a:not(.cke_button),
-    .tabular table th p {
-
-    }
 }
