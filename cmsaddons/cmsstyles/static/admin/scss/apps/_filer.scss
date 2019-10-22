@@ -51,8 +51,14 @@ form .form-row .filer-dropzone {
     padding: 5px 20px !important;
     min-height: 70px !important;
 }
+
 form .form-row .filer-dropzone.js-object-attached .filerFile,
 form .form-row .filer-dropzone .filerFile {
     top: 15px !important;
     text-align: left !important;
+}
+
+form .form-row .filer-dropzone .dz-message,
+form .form-row .filer-dropzone.filer-dropzone-mobile .dz-message {
+    margin-top: 15px !important;
 }
