@@ -23,6 +23,24 @@
     #content-main {
         box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
     }
+
+}
+
+&.app-filer {
+
+    #content-related {
+        display: none;
+    }
+}
+
+&.popup.change-list {
+
+    #container {
+
+        #content {
+            padding: 0 !important;
+        }
+    }
 }
 
 form .form-row .filer-dropzone {
@@ -30,7 +48,7 @@ form .form-row .filer-dropzone {
 }
 
 .filer-dropzone {
-    padding: 5px 20px important;
+    padding: 5px 20px !important;
     min-height: 70px !important;
 }
 form .form-row .filer-dropzone.js-object-attached .filerFile,

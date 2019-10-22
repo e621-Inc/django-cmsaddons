@@ -1,0 +1,16 @@
+&.delete-confirmation {
+
+    form,
+    .colM form {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        display: block;
+        margin: 0;
+        padding: 10px 20px !important;
+
+        background-color: #fff !important;
+        border-top: 1px solid #ccc !important;
+    }
+}

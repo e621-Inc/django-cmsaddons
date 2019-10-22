@@ -1,4 +1,9 @@
 // CMS overrides ---------------------------------------------------------
+#container .breadcrumbs + #content,
+#container .breadcrumbs + .messagelist + #content,
+&.delete-confirmation #container .breadcrumbs + #content {
+    margin: 0 !important;
+}
 
 &.cms-admin-modal #content,
 &.cms-admin-modal.filebrowser #content,

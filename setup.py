@@ -26,6 +26,7 @@ setup(
         'Django>=2.1,<2.3',
         'django-cms>=3.7,<3.8',
         'djangocms-admin-style==1.4.0',
+        'django-libsass>=0.7',
     ),
     include_package_data=True,
     zip_safe=False,
