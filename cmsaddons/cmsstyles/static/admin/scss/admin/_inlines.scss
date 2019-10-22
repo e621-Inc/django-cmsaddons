@@ -1,0 +1,77 @@
+// Inlines ----------------------------------------------------------------
+
+.inline-group,
+.inline-group[data-inline-type="stacked"] {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+
+    .inline-related {
+        margin: 8px 0;
+        padding: 0 0 5px 0;
+        box-shadow: none;
+        background-color: #f9f9f9;
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+
+        h3 {
+            display: flex;
+            justify-content: flex-start;
+            margin: 0 0 5px;
+            padding: 8px 20px;
+            border-top: 0;
+            border-bottom: 1px dashed #ccc;
+
+            b,
+            span {
+                font-size: 14px;
+            }
+
+            .inline_label {
+                flex-grow: 1;
+            }
+
+            .inline-deletelink {
+                position: relative;
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: center;
+                text-indent: 0;
+
+                &:before {
+                    margin: 0 0 0 10px;
+                }
+            }
+
+            .delete {
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: center;
+
+                input {
+                    top: auto;
+                    margin: 0 0 0 10px;
+                }
+
+                label {
+                    color: #0bf !important;
+                    font-size: 14px !important;
+                }
+            }
+        }
+
+        fieldset,
+        fieldset.module {
+            padding: 0 !important;
+
+            .form-row {
+                margin: 0 0 10px;
+            }
+        }
+    }
+
+    .add-row {
+        padding: 10px 20px;
+        background-color: #f9f9f9 !important;
+        border-top: 1px solid #ddd;
+    }
+}

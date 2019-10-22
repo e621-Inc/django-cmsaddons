@@ -1,0 +1,159 @@
+// Change Form ------------------------------------------------------------
+
+&.change-form {
+
+    div.calendarbox {
+        width: 260px !important;
+        transform: translateX(-100%);
+    }
+    div.clockbox {
+        transform: translateX(-100%);
+    }
+
+    form {
+        box-sizing: border-box;
+        padding: 0;
+
+        #page_form_lang_tabs {
+            margin: 0;
+        }
+
+        .module {
+
+            h2 {
+                margin: 0;
+                padding: 14px 20px;
+                font-size: 14px !important;
+                font-weight: bold;
+                line-height: 1;
+                border: 0;
+                background-color: #ececec;
+            }
+        }
+
+        fieldset {
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        .form-row {
+            box-sizing: border-box;
+            padding: 0 20px;
+            margin: 20px 0;
+            max-width: 100%;
+
+            & > div {
+                box-sizing: border-box;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: flex-start;
+                width: 100% !important;
+            }
+        }
+
+        .related-widget-wrapper {
+            ul + a {
+                display: none;
+            }
+        }
+
+        label,
+        label.aligned {
+            box-sizing: border-box;
+            width: 100% !important;
+            margin-bottom: 2px;
+            text-transform: none;
+        }
+
+        label.required,
+        label.aligned.required {
+            font-weight: 500 !important;
+        }
+
+        .form-row .checkbox-row {
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: flex-start;
+            width: 100%;
+            margin: 0;
+
+            label {
+                width: auto !important;
+                flex-grow: 1;
+                flex-shrink: 1;
+            }
+        }
+
+        .row-hidden {
+            position: absolute;
+            left: -1000000000%;
+            top: -1000000000%;
+        }
+
+        .field-type label,
+        .sortedm2m label,
+        .vCheckboxLabel {
+            font-size: 14px !important;
+        }
+
+        .calendar-shortcuts,
+        span.datetimeshortcuts {
+            padding: 0 !important;
+        }
+
+        .datetime input.vDateField,
+        .datetime input.vTimeField,
+        .form-row .datetime input.vDateField,
+        .form-row .datetime input.vTimeField,
+        input.vDateField,
+        input.vTimeField {
+            flex-grow: 1;
+            flex-shrink: 1;
+            width: auto !important;
+        }
+
+        .ckeditor-widget {
+            width: 100%;
+        }
+
+        .submit-row {
+            box-sizing: border-box;
+            margin: 10px 0 0;
+            padding: 10px 20px;
+            position: fixed;
+            z-index: 9;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background-color: #fff !important;
+            border-top: 1px solid #ccc !important;
+
+            .closelink,
+            input[type="submit"],
+            input[type="submit"].default,
+            .deletelink-box .deletelink {
+                box-sizing: border-box;
+                height: 30px;
+                padding: 6px 10px !important;
+                font-size: 11px !important;
+            }
+        }
+    }
+
+    form .aligned p.help,
+    form .aligned div.help,
+    form .aligned input + p.help,
+    form .aligned textarea + p.help,
+    form .aligned select + p.help,
+    form .aligned input + div.help,
+    form .aligned textarea + div.help,
+    form .aligned select + div.help {
+        width: 100%;
+        margin-left: 0 !important;
+        padding: 3px 0;
+        font-size: 12px;
+    }
+}

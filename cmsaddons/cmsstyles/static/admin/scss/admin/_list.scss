@@ -1,0 +1,111 @@
+// Change List ------------------------------------------------------------
+
+&.change-list {
+
+    table {
+
+        thead {
+
+            th,
+            th a {
+                font-size: 12px !important;
+                font-weight: bold;
+                text-transform: none;
+            }
+
+            .sorted {
+
+                .text {
+                    padding-right: 30px;
+                }
+            }
+        }
+
+        td a {
+            display: inline-block;
+            vertical-align: middle;
+            max-width: 300px;
+            overflow: hidden;
+        }
+    }
+
+    #changelist,
+    #changelist.filtered {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        #toolbar {
+            width: 100%;
+            margin: 0 0 15px !important;
+            padding: 0;
+
+            #changelist-search {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            #searchbar {
+                box-sizing: border-box;
+                margin: 0;
+            }
+
+            input[type="submit"] {
+                box-sizing: border-box;
+                height: 34px;
+            }
+        }
+
+        #changelist-filter {
+            position: relative;
+            left: auto;
+            top: auto;
+            box-sizing: border-box;
+            width: 230px;
+            max-height: none;
+            order: 3;
+            margin: 0;
+            padding-left: 20px;
+            float: none;
+            background-color: transparent !important;
+        }
+
+        #changelist-form {
+            width: auto;
+            flex-grow: 1;
+            flex-shrink: 1;
+            box-shadow: 0 0 5px 0 rgba(0,0,0,.2);
+        }
+
+        .actions {
+            box-sizing: border-box;
+            width: 100%;
+            margin: 0 !important;
+            padding: 5px 10px !important;
+            background-color: #fff;
+            border-bottom: 1px solid #eee;
+
+            select {
+                margin: 0 10px 0 0 !important;
+            }
+        }
+
+        .results {
+            width: 100%;
+            margin: 0 !important;
+            box-shadow: none;
+        }
+
+        .paginator,
+        .results + .paginator {
+            position: relative;
+            box-sizing: border-box;
+            width: 100% !important;
+            margin: 0 !important;
+            box-shadow: none !important;
+            clip: auto;
+        }
+    }
+}

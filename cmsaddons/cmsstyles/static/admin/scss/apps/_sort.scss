@@ -1,0 +1,22 @@
+.admin-sort-draganddrop-inline.admin-sort-stacked {
+
+    .admin-sort-row {
+
+        &:before {
+            display: none;
+        }
+
+        h3 {
+            padding-left: 30px;
+        }
+
+        .admin-sort-drag {
+            left: 0;
+            top: 0;
+            bottom: auto;
+            height: 36px;
+            width: 31px;
+            border: 6px solid rgba(242,242,242, 1);
+        }
+    }
+}

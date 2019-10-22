@@ -1,0 +1,40 @@
+&.filebrowser {
+
+    #content {
+
+        .navigator-top-nav {
+            box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
+        }
+
+        .navigator-table {
+
+            .column-action {
+
+                .action-button {
+
+                    span {
+                        line-height: 1;
+                    }
+                }
+            }
+        }
+    }
+
+    #content-main {
+        box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
+    }
+}
+
+form .form-row .filer-dropzone {
+    width: 100%;
+}
+
+.filer-dropzone {
+    padding: 5px 20px important;
+    min-height: 70px !important;
+}
+form .form-row .filer-dropzone.js-object-attached .filerFile,
+form .form-row .filer-dropzone .filerFile {
+    top: 15px !important;
+    text-align: left !important;
+}

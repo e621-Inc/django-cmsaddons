@@ -1,0 +1,27 @@
+body,
+body.filebrowser,
+.djangocms-admin-style,
+.cms-admin-sideframe {
+
+    @import 'admin/layout';
+    @import 'admin/form';
+    @import 'admin/list';
+    @import 'admin/inlines';
+
+    @import 'apps/sort';
+    @import 'apps/cms';
+    @import 'apps/filer';
+}
+
+@media screen and (max-width: 768px) {
+
+    body,
+    body.filebrowser,
+    .djangocms-admin-style,
+    .cms-admin-sideframe  {
+
+        &.change-form #container #content {
+            padding-bottom: 200px !important;
+        }
+    }
+}

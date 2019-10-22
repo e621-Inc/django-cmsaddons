@@ -1,0 +1,37 @@
+// CMS overrides ---------------------------------------------------------
+
+&.cms-admin-modal #content,
+&.cms-admin-modal.filebrowser #content,
+&.cms_modal-window #content,
+&.cms_modal-window.filebrowser #content,
+&.popup #content,
+&.popup.filebrowser #content {
+    margin: 0 !important;
+}
+
+&.cms-admin-modal #container #content,
+&.cms-admin-modal #container .breadcrumbs + #content,
+&.cms-admin-modal #container .breadcrumbs + .messagelist + #content,
+&.cms_modal-window #container .breadcrumbs + #content,
+&.cms_modal-window #container .breadcrumbs + .messagelist + #content,
+&.popup #container .breadcrumbs + #content,
+&.popup #container .breadcrumbs + .messagelist + #content {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+&.cms-admin-modal form .checkbox-row,
+&.cms_modal-window form .checkbox-row,
+&.popup form .checkbox-row {
+    padding: 0 !important;
+}
+
+&.cms-admin-modal .object-tools {
+    margin: 5px 20px 0 0;
+
+    .historylink,
+    .viewsitelink {
+        font-size: 12px;
+        padding: 2px 12px !important;
+    }
+}
