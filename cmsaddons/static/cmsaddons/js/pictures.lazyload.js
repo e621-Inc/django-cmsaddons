@@ -1,6 +1,8 @@
 var PicturesLazyLoad = ( function() {
     'use strict';
 
+    var observer;
+
     return { init: lazy_loader };
 
     function lazy_loader( selector, options ) {
@@ -10,8 +12,8 @@ var PicturesLazyLoad = ( function() {
 
         if ( 'loading' in HTMLImageElement.prototype ) {
             // full modern browser lazyloading we do nothing
-            // set_browser_loader( elements );
-            set_observer( elements, options.observer );
+            set_browser_loader( elements );
+            // set_observer( elements, options.observer );
         } else if( 'IntersectionObserver' in window ) {
             // modern js lazyloading
             set_observer( elements, options.observer );
@@ -37,6 +39,7 @@ var PicturesLazyLoad = ( function() {
     function set_browser_loader( elements ) {
         elements.forEach( element => {
             element.classList.add( 'loading' );
+            element.addEventListener( 'load', load_element_end );
             element.src = element.dataset.src;
             load_element_init( element );
         } );
@@ -51,21 +54,21 @@ var PicturesLazyLoad = ( function() {
             load_element_init( elements[ i ] );
             observer.observe( elements[ i ] );
         }
+    };
 
-        function lazy_load( entries ) {
-            for( var i = 0; i < entries.length; ++i ) {
-                load_element( entries[ i ] )
-            }
-        };
+    function lazy_load( entries ) {
+        for( var i = 0; i < entries.length; ++i ) {
+            load_element( entries[ i ] )
+        }
+    };
 
-        function load_element( entry ) {
-            var element = entry.target;
-            if ( entry.intersectionRatio > 0 ) {
-                element.src = element.dataset.src;
-                element.addEventListener( 'load', load_element_end )
-                observer.unobserve( element );
-            }
-        };
+    function load_element( entry ) {
+        var element = entry.target;
+        if ( entry.intersectionRatio > 0 ) {
+            element.src = element.dataset.src;
+            element.addEventListener( 'load', load_element_end );
+            observer.unobserve( element );
+        }
     };
 
 
