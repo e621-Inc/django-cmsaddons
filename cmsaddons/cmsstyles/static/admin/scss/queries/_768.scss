@@ -1,0 +1,28 @@
+@media screen and (max-width: 767px) {
+
+    body,
+    body.filebrowser,
+    .djangocms-admin-style,
+    .cms-admin-sideframe  {
+
+        &.change-list {
+            
+            #changelist.module {
+                
+                #changelist-form {
+                    width: 100%;
+                }
+            }
+        }
+
+        &.change-form {
+
+            #container {
+
+                #content {
+                    padding-bottom: 200px !important;
+                }
+            }
+        }
+    }
+}

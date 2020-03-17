@@ -1,0 +1,18 @@
+@media screen and (max-width: 900px) {
+
+    body,
+    body.filebrowser,
+    .djangocms-admin-style,
+    .cms-admin-sideframe  {
+
+        &.dashboard {
+        
+            #container {
+                
+                #content-main {
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+}
