@@ -19,6 +19,7 @@ downloads/
 storage/
 eggs/
 .eggs/
+.vscode/
 lib/
 lib64/
 parts/
