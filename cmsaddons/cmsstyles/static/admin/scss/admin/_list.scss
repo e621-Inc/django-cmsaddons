@@ -74,9 +74,9 @@
 
         #changelist-form {
             width: auto;
+            max-width: 100%;
             flex-grow: 1;
             flex-shrink: 1;
-            box-shadow: 0 0 5px 0 rgba(0,0,0,.2);
         }
 
         .actions {

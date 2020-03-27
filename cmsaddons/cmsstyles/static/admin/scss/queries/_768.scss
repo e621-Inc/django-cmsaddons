@@ -21,6 +21,24 @@
 
                 #content {
                     padding-bottom: 200px !important;
+                    
+                    #changelist.filtered{
+                    
+                        #changelist-form {
+                            width: 100% !important;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        &.dashboard {
+        
+            #container {
+                
+                #content-main {
+                    width: 100% !important;
                 }
             }
         }
