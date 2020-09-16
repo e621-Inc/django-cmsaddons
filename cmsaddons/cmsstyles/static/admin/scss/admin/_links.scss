@@ -8,12 +8,15 @@
 
     .linkset {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: flex-start;
         align-content: flex-start;
+        
 
         h2 {
-            width: 100%;;
+            width: 100%;
+            margin-bottom: 20px;
         }
 
         .form-row {
