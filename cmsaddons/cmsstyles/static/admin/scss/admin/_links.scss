@@ -13,7 +13,6 @@
         align-items: flex-start;
         align-content: flex-start;
         
-
         h2 {
             width: 100%;
             margin-bottom: 20px;
@@ -51,6 +50,10 @@
         .field-link_cms_page {
             
             select[name="link_cms_page_0"] {
+                display: none;
+            }
+
+            a {
                 display: none;
             }
         }
