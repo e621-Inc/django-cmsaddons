@@ -12,8 +12,10 @@ body.cms-admin-sideframe {
     @import 'admin/list';
     @import 'admin/inlines';
     @import 'admin/login';
-
+    
     @import 'apps/sort';
+    
+    @import 'admin/links';
 }
 
 @import 'queries/1200';

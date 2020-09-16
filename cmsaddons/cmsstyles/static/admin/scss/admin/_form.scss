@@ -50,6 +50,29 @@
                 justify-content: flex-start;
                 width: 100% !important;
             }
+
+        }
+
+        .js-filer-dropzone-message {
+            display: none;
+        }
+
+        .url {
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            width: 100%;
+            padding: 0;
+
+            color: #eee !important;
+            
+            a {
+                display: none;
+            }
+
+            input {
+                order: -1;
+            }
         }
 
         .related-widget-wrapper {

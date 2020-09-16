@@ -1,0 +1,74 @@
+#container #content {
+
+    fieldset .fieldBox + .fieldBox {
+        margin-top: 0;
+        padding-top: 0;
+        border-top: 0;
+    }
+
+    .linkset {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        align-content: flex-start;
+
+        h2 {
+            width: 100%;;
+        }
+
+        .form-row {
+            margin: 0 !important;
+
+            label {
+                display: none;
+            }
+
+            input[type="text"],
+            input[type="url"],
+            input[type="email"],
+            select,
+            textarea {
+                width: 100% !important;
+                min-width: 0;
+                margin: 0 !important;
+                border-radius: 0 !important;
+            }
+        }
+
+        .field-link_type {
+            width: 100px;
+        }
+
+        .field-link_type + .form-row {
+            flex-grow: 1;
+            flex-shrink: 1;
+            margin-left: 10px !important;
+        }
+
+        .field-link_cms_page {
+            
+            select[name="link_cms_page_0"] {
+                display: none;
+            }
+        }
+    }
+}
+
+&.model-ckeditorlink.app-links,
+&.model-ckeditorlink.app-links.popup {
+    background-color: #eee;
+
+    #container #content {
+        padding: 40px 0 !important;
+
+        .linkset {
+            box-sizing: border-box;
+            padding: 0 20px;
+
+            h2 {
+                display: None;
+            }
+        }
+    }
+}
+
