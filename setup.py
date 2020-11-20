@@ -24,7 +24,7 @@ setup(
     packages=find_packages(exclude=['testproject', 'testproject.*']),
     install_requires=(
         'Django>=2.1,<2.3',
-        'django-cms>=3.7,<3.8',
+        'django-cms>=3.7,<4.0',
         'djangocms-admin-style==1.4.0',
         'django-libsass>=0.7',
     ),
